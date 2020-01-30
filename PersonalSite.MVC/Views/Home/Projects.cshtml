@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+@section styles{
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+}
+@section titleheader{Projects}
+<div id="fh5co-services" class="fh5co-bg-section animate-box">
+    <div class="row">
+        <div class="col-md-12 col-md-offset-0 text-center">
+
+            <div id="tabs" class="display-t">
+                <ul>
+                    <li><a href="#tabs-1">Agency LMS</a></li>
+                    <li><a href="#tabs-2">SpaceX</a></li>
+                    <li><a href="#tabs-3">Superheroes, Inc.</a></li>
+                    <li><a href="#tabs-4">React Calculator</a></li>
+                    @*<li><a href="#tabs-4">U-Store</a></li>*@
+                </ul>
+                <div id="tabs-1">
+                    <img src="~/Content/images/MyProgressView.png" />
+                    <div>
+                        <p>
+                            This was my final project for Centriq Training's full-stack web developer program.  Students were given their choice of three types of project and given an example database schema.  Students had nine days to develop their project before deployment and code freeze.  An instructer acted as project manager and Scrum Master.  Students utilized source control, Kanban boards, and participated in daily Scrum stand-ups.  I chose an online Learning Management System as my project. I themed my project as an online training site for an agency in my former career field of Direct Support for individuals with developmental disabilities.  Users in the "Employee" role can check on their progress and view courses and their corresponding lessons.  Once an Employee has viewed each lesson in a course, it is recorded as complete and an email is automatically sent to that Employee's manager.  Users in the "Manager" role can view the progress of each Employee assigned to them.  They can see a list on all of their Employees that displays that Employee's number of incomplete courses and courses that have expired or will expire soon.  They can then view the details of each employee to see which courses are complete (with courses that are expired or expiring soon highlighted) and incomplete (along with the number of lessons remaining.)  This view is similar to the Employee's view of their own progress.  Both of these views display two separate ViewModels in table form, using the <a href="https://datatables.net/">DataTables</a> jQuery widget.  I used a dynamic model called ExpandoObject() to accomplish this while still maintaining Entity Framework style formatting.  Finally, users in the "Admin" role have full Create, Read, Update, and Delete functionality for courses and users.  
+                        </p>
+                        <div>
+                            <button id="indexbutton" onclick="window.open('http://fsdp.jdbaker.net')">View Site</button>
+                            <button id="indexbutton" onclick="window.open('http://fsdp.jdbaker.net/Content/JonathanBakerDocumentation.pdf')">View Project Documentation</button>
+                            <button id="indexbutton" onclick="window.open('https://bitbucket.org/bakerjon/finalproject/get/master.zip')">Download Source Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <img src="~/content/images/spacex.png" />
+                    <div>
+                        <p>This is a simple ASP.NET MVC web application I made to interact with the <a href="https://github.com/r-spacex/SpaceX-API">SpaceX API.</a>  The landing page is a countdown to the next SpaceX launch.  For that, I used <a href="http://vincentloy.github.io/simplyCountdown.js/">simplyCountdown,</a> a JavaScript countdown widget, and used jQuery to pull the date and time of the next launch from the API.  The other page displays information about all past and upcoming SpaceX launches formatted with the <a href="https://demos.telerik.com/kendo-ui/grid/index">Kendo UI Grid widget.</a>  To consume the information for that table, I created another layer in my MVC application and pulled the information from the API using C#.  All of the direct interaction with the API occurs in this layer, so that it can easily be used in other projects, even if they are not in the MVC format.  The View containing the table is strongly-typed with the LaunchModel that I created in my API layer and was initially scaffolded using Entity Framework.  I then modified it to contain only the information I desired and to include the Grid widget.</p>
+                        <div>
+                            <button id="indexbutton" onclick="window.open('http://spacex.jdbaker.net')">View Site</button>
+                            <button id="indexbutton" onclick="window.open('https://github.com/jonathandavidbaker/SpaceX/archive/master.zip')">Download Source Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <img src="~/content/images/superheroes.png" />
+                    <div>
+                        <p>
+                            This ASP.NET MVC project was developed in Team Development class at Centriq Training.  The class teaches students about modern development workplaces and Application Lifecycle Management.  For this project, students were given a project brief for a data-driven application that makes use of different user roles.  We were provided the brief, an HTML template, and a database schema.  We then had two days to work independently in class to complete a minimum viable product.  We were only allowed to work on this project while we were in class (8:30AM - 4:00PM) each day.  The classroom was a simulated Agile environment and the instructor acted as a Project Manager / Scrum Master.  We participated in Scrum ceremonies, used a Kanban board, and utilized source control throughout the project.  I created the database using Microsoft SQL Server Management Studio and then built my MVC application.  I created a custom view model with C# for the calendar page so that I could display all of the information I wanted, sorted by date.  The other views are restricted by user roles with "Heroes" able to view all information, but only Admins able to create, edit, or delete records.  The data is formatted and displayed using the <a href="https://datatables.net/">DataTables</a> jQuery widget.  These strongly-typed views were scaffolded using Entity Framework and then modified to encorporate the DataTables widget and to allow image uploads in the "Create" and "Edit" views.
+                        </p>
+                        <div>
+                            <button id="indexbutton" onclick="window.open('http://superhero.jdbaker.net')">View Site</button>
+                            <button id="indexbutton" onclick="window.open('https://bitbucket.org/bakerjon/superheroproject/get/d7d12ddc50af.zip')">Download Source Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-4">
+                    <img src="~/Content/images/calculator.PNG" />
+                    <div>
+                        <p>
+                            This is a simple calculator application I created while teaching myself React.JS.  While learning about React, I discovered that it was very common to use Node.JS when creating React applications.  Because of this, I also began learning about Node.  This is a very basic application, but I am continuing to learn more about React, Node, and related technologies.
+                        </p>
+                        <div>
+                            <button id="indexbutton" onclick="window.open('http://jonbakercalculator.herokuapp.com/')">View Application</button>
+                        </div>
+                    </div>
+                </div>
+                @*<div id="tabs-4">
+                    <img src="~/content/images/screenshot.png" />
+
+                    <div>
+                        <p>
+                            Created a secure application for managing product data. Application is built to simulate an online store front with a shopping cart. Administrators have the ability to manage product, category and vendor data.
+                        </p>
+                        <p>
+                            <strong>More information about this project coming soon!</strong>
+                        </p>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+            $(".selector").tabs({
+                heightStyle: "auto"
+            });
+        });
+    </script>
+}
+

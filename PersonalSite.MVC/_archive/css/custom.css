@@ -1,0 +1,144 @@
+﻿
+
+#accordion h3 {
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #B7544E;
+    font-family: "Work Sans", Arial, sans-serif;
+    text-decoration: none;
+}
+
+#accordion div {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: left;
+    background: #F2F2F2;
+    border: none;
+    text-decoration: none;
+    font-family: "Work Sans", Arial, sans-serif;
+}
+
+.ui-widget-content, .ui-tabs-tab {
+    color: #828282;
+}
+
+.ui-tabs-anchor {
+    background: #828282;
+    color: #B7544E;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    color: #B7544E;
+    background: #f2f2f2;
+    border: 2px solid #B7544E;
+}
+
+.ui-state-default{
+    background: #f2f2f2;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 192px;
+}
+
+.job ul {
+    border-bottom: 3px solid #828289;
+    padding-bottom: 2%;
+}
+
+.job p {
+    padding: 1%;
+    border-bottom: 1px solid #B7544E;
+}
+
+#rfvFName, #rfvLName, #rfvEmail, #rfvSubject, #rfvMessage {
+    color: #F35F55;
+}
+
+strong {
+    color: #B7544E;
+}
+
+#linkheading {
+    color: #B7544E;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.link {
+    text-align: center;
+    padding: 2%;
+}
+
+    .link a {
+        color: #B7544E;
+        font-size: 1.5em;
+    }
+
+    .link img {
+        margin: auto;
+        border: 3px solid #B7544E;
+        border-radius: 50%;
+    }
+
+.fh5co-bg-section {
+    background: #F2F2F2;
+    overflow: hidden;
+}
+
+#notfunctional {
+    color: #B7544E;
+    font-size: .75em;
+}
+
+.ui-state-focus {
+    outline: none;
+}
+
+#tabs {
+    display: inline-block;
+}
+
+    #tabs img {
+        float: left;
+        margin-right: 2%;
+    }
+
+    #tabs div {
+        display: block;
+        text-align: left;
+    }
+
+.ui-tabs-active a {
+    background: #B7544E;
+}
+
+#tabs .ui-state-default a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    #accordion div {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.hometext{
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #f2f2f2;
+    overflow: hidden;
+
+}
+
+#page{
+    background: #f2f2f2;
+}
